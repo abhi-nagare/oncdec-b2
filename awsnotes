@@ -1,0 +1,116 @@
+1 What is AWS = AWS stands for Amazon Web Services. 
+It is a cloud computing platform that provides services like: 
+• Virtual servers (EC2) 
+• Storage (S3) 
+• Databases (RDS, DynamoDB) 
+• Serverless computing (Lambda) 
+• Networking (VPC) 
+• Security (IAM) 
+• Analytics, AI/ML, and many more 
+2 Types of Vertulization 
+1. HVM (Hardware Virtual Machine) 
+Runs directly on hardware using full virtualization. 
+Allows the instance to use hardware features like CPU, network, and storage efficiently. 
+Best For: 
+• Most modern EC2 instance types 
+• High performance 
+• Windows instances 
+• Linux instances with high CPU/GPU needs 
+2. PV (Paravirtualization) (Older method) 
+Uses a software layer to communicate with hardware. 
+Slower than HVM and mostly phased out. 
+Best For: 
+• Old Linux kernels 
+• Older workloads (not commonly used now) 
+3 Which Hyperviser does AWS use 
+Nitro hyperviser= Now Xen hyperviser= before 
+4 Diffrence Between SSH and HTTP 
+1. SSH (Secure Shell) 
+• Used to securely access and control servers/computers. 
+• Gives command-line access to a remote machine. 
+• Encrypted (very secure). 
+• Port: 22 
+EC2 IMP NOTES (ABHI) 
+Example: 
+You use SSH to connect to an EC2 instance in AWS: 
+2. HTTP (HyperText Transfer Protocol) 
+• Used to access websites on the internet. 
+• Shows webpages, images, videos, etc. 
+• Not encrypted (data can be seen). 
+• Port: 80 
+Example: 
+Opening a website: 
+5 Types of traffic 
+1. Inbound Traffic 
+◆ Data coming into AWS from the internet or users. 
+Examples: 
+• A user opening your website hosted on EC2 
+• Uploading a file to S3 
+• API calls from clients to your application 
+2. Outbound Traffic 
+◆ Data going out of AWS to the internet. 
+Examples: 
+• Sending website content to users 
+• Downloading files from S3 
+• API responses to clients 
+6 Why we used SSH 
+• Secure – your data is protected and encrypted. 
+• Remote access – you can control a server from far away. 
+• Run commands – install software, check logs, start apps, etc. 
+• Manage AWS EC2 – it's the main way to connect to EC2 Linux servers. 
+EC2 IMP NOTES (ABHI) 
+7.What is RDP (port=3389) 
+RDP (Remote Desktop Protocol) is a way to connect to a Windows server in AWS. 
+Why do we use RDP? 
+To access a Windows EC2 server 
+To see the full desktop screen 
+To use applications with mouse and keyboard 
+To manage files, folders, and software easily 
+8 Types Of AMI 
+1 EBS (Elastic Blog Store) use for genral purpose we can use daily. 
+2 Instance store (Server Usable) big server that can not close, that use this. 
+9 What are the purchasing option In AWS 
+1. On-Demand Instances= Pay only for the hours/seconds you use. 
+No long-term commitment. 
+2. Saving plans = 1 year or 3 year only 
+3. Reserve Instance = Reserve Avablity zones/ region/ store instance type. 
+4. Spot Instance = Buy unused AWS capacity at a very LOW price (up to 90% cheaper). 
+But AWS can stop them anytime. 
+5. Capacity Reservation = Reserve capacity in avaiblity zones. 
+6. Dedicated instance and Dedicated Hoste= You get your own physical server (not 
+shared with anyone). 
+10 Type Of Instances 
+1. General Purpose Instances 
+Balanced CPU + Memory 
+2. Compute Optimized Instances 
+More CPU power. 
+3. Memory Optimized Instances 
+More RAM (memory). 
+4. Storage Optimized Instances 
+EC2 IMP NOTES (ABHI) 
+Built for heavy storage, fast read/write. 
+5. Accelerated Computing Instances 
+Have GPU or special hardware. 
+11 Three Catagery Of Volume 
+1 SSD (Solid straight drive) 
+This id bootable type volume 
+Type: genral purpose, Provision IOPS 
+Measuring unit: IOPS (input output operation per second) 
+2 HDD (Hard Disk Drive) 
+This is nonbootable type volume 
+Type: Throughput optimize, Cold HDD 
+Measuring unit: Throughput Rate 
+3 Magnatic 
+This is bootable type volume 
+Type: Standard 
+Measuring unit: it cout by size 
+12 Type Of Partation 
+1= Primary Partation (we can make 1 or 4 part) 
+2= Extended Partation (1) 
+Logical partation (1to64) in one Extended partation we can make 64 logical 
+13 What is file system formating 
+There are 4 types 
+1 ext2= it’s old and lacks protection 
+EC2 IMP NOTES (ABHI) 
+2 ext3= adds protection 
+3 ext4= improves performance and reliability 
